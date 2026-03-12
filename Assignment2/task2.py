@@ -14,6 +14,6 @@ for order in orders:
     else :
         print(f"{order}  -> discount 0% -> {final_amount}")
 
-    revenue += order
+    revenue += final_amount
 
 print(f"Total revenue : {revenue}")
