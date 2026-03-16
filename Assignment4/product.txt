@@ -1,0 +1,3 @@
+fish | 250
+chick | 450
+socks | 100
