@@ -1,0 +1,8 @@
+key      | value | 15% discount 
+Mouse    | 500   | 425.0
+Keyboard | 800   | 680.0
+Moniter  | 7000   | 5950.0
+Pendrive | 400   | 340.0
+Camera   | 5000   | 4250.0
+Total Items : 13700
+Average Discountes Price : 2740.0
