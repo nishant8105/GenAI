@@ -14,7 +14,7 @@ for price in prices:
         print(f"Added {price}, Running total = {total}")
 
     except TypeError:
-        print(f"TypeError: Invalid type skipped -> {price}")
+        print(f"TypeError: Invalid price skipped -> {price}")
 
     except ValueError as e:
         print(f"ValueError: {e} -> {price}")
