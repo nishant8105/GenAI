@@ -1,0 +1,13 @@
+import numpy as np
+
+data = np.array([
+    [10, 20, 30],
+    [40, 50, 60],
+    [70, 80, 90]
+])
+
+print("row-wise sum: ",np.sum(data, axis=1))
+print("Column-wise sum: ",np.sum(data, axis=0))
+print("Minimum value: ",np.min(data))
+print("Maximum value: ", np.max(data))
+print("Mean: ",np.mean(data))
