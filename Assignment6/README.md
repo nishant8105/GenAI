@@ -1,106 +1,24 @@
-# 📘 Python Exception Handling Tasks
+# Python Exception Handling Assignment
 
-This repository contains a collection of Python scripts (`task1.py` to `task5.py`) that demonstrate different use cases of **exception handling** and input validation in Python.
+This assignment covers how to handle runtime errors gracefully in Python using `try`, `except`, `finally`, and raising custom exceptions.
 
-Each task focuses on handling specific types of errors and ensuring robust program execution.
+## Files Overview
 
----
+### `task1.py` - Basic Exception Handling
+- **Division by Zero:** Prompts the user for two numbers and attempts division.
+- Catches `ZeroDivisionError` if the denominator is zero and `ValueError` if the input is not a number. Uses a `finally` block to signal completion.
 
-## 📂 Files Overview
+### `task2.py` - Iterative Error Handling
+- **Data Cleaning:** Iterates through a list of mixed data types (integers, strings) and negative values.
+- Uses `try...except` inside a loop to catch `TypeError` (for bad types) and explicitly raises a `ValueError` for negative prices, continuing the loop safely.
 
-### 🔹 Task 1 – Division with Exception Handling
-📄 `task1.py`  
+### `task3.py` - Raising Custom Exceptions
+- **Validation:** Defines an age-checking function that explicitly raises a `ValueError` if the provided age is out of realistic bounds (1 to 120).
 
-Handles division between two user inputs with proper error handling.
+### `task4.py` - File Handling Exceptions
+- **File Errors:** Attempts to open a user-provided file name.
+- Catches `FileNotFoundError` if the file doesn't exist and `PermissionError` if the script lacks access rights.
 
-**Features:**
-- Accepts numerator and denominator from user
-- Handles:
-  - `ZeroDivisionError`
-  - `ValueError`
-- Ensures program completion using `finally`
-
-📌 Example behavior:
-- Prevents division by zero  
-- Rejects non-integer inputs  
-
----
-
-### 🔹 Task 2 – Price List Processing
-📄 `task2.py`  
-
-Processes a list of prices with mixed data types and invalid values.
-
-**Features:**
-- Converts values to integers
-- Skips invalid entries
-- Raises custom error for negative values
-- Maintains a running total
-
-**Handled Exceptions:**
-- `TypeError`
-- `ValueError`
-
----
-
-### 🔹 Task 3 – Age Validation
-📄 `task3.py`  
-
-Validates user age input within a realistic range.
-
-**Features:**
-- Accepts age input
-- Uses a custom validation function
-- Raises error if age is outside 1–120
-
-**Handled Exception:**
-- `ValueError`
-
----
-
-### 🔹 Task 4 – File Reading with Error Handling
-📄 `task4.py`  
-
-Reads and displays the first 3 lines of a file.
-
-**Features:**
-- Takes file name as input
-- Reads file content safely
-- Handles file-related errors
-
-**Handled Exceptions:**
-- `FileNotFoundError`
-- `PermissionError`
-
----
-
-### 🔹 Task 5 – Shopping Cart System
-📄 `task5.py`  
-
-Simulates a simple shopping cart with input validation.
-
-**Features:**
-- Accepts multiple price inputs
-- Stops input on `'q'`
-- Rejects negative and invalid values
-- Calculates:
-  - Total items
-  - Total bill
-
-**Handled Exception:**
-- `ValueError`
-
----
-
-## 🚀 How to Run
-
-1. Make sure Python is installed (Python 3.x recommended)
-2. Clone or download this repository
-3. Run any task file:
-
-```bash
-python task1.py
-python task2.py
-python task3.py
-python task4.py
-python task5.py
+### `task5.py` - Practical Cart Validation
+- **Continuous Validation:** Implements a cart loop that takes price inputs.
+- Validates the input as a float and raises an error for negative prices. Non-numeric or invalid inputs are caught without crashing the application.
