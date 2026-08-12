@@ -1,29 +1,18 @@
-# Assignment 5
+# Python Modules and Packages Assignment
 
-This directory contains Python tasks focusing on modular programming, creating custom modules, and organizing code into packages.
+This assignment demonstrates how to organize Python code into custom modules and packages, and how to import and use them in a main script.
 
-## Overview of Modules and Packages
+## Files Overview
 
-### `math_utils.py`
-A simple utility module for mathematical operations. It includes:
-- `add(a, b)`: Returns the sum of two numbers.
-- `subtract(a, b)`: Returns the difference between two numbers.
-- `square(n)`: Returns the square of a number.
+### `math_utils.py` - Custom Math Module
+- **Module:** A standalone python file containing simple mathematical functions like `add()`, `subtract()`, and `square()`.
 
-### `string_utils.py`
-A utility module for string manipulation. It includes:
-- `capitalize_words(text)`: Converts the given text to uppercase.
-- `reverse_string(text)`: Returns the reversed version of the given string.
-- `word_count(text)`: Returns the length (character count) of the string.
+### `string_utils.py` - Custom String Module
+- **Module:** Contains string manipulation functions such as `capitalize_words()`, `reverse_string()`, and `word_count()`.
 
-### `shop_package`
-A package containing modules related to shop billing and discounts.
-#### `billing.py`
-- `calculate_total(prices)`: Takes a list or tuple of prices and returns the sum.
-- `apply_tax(amount)`: Calculates and returns the amount with an additional 5% tax.
-#### `discount.py`
-- `apply_discount(price, percent)`: Applies a percentage-based discount to the price.
-- `flat_discount(price)`: Applies a flat discount of 50 to the price.
+### `shop_package/` - Custom Python Package
+- **Package:** A directory that acts as a package, containing multiple modules like `discount.py` and `billing.py` (imported in the main script).
 
-### `main.py`
-The main execution script that imports and demonstrates the usage of the functions defined in `math_utils.py`, `string_utils.py`, and the `shop_package` modules.
+### `main.py` - Importing Modules
+- **Imports:** Acts as the entry point script. It imports functions from `math_utils` (using an alias `mu` and direct imports), `string_utils` (as `su`), and specific functions from `shop_package`.
+- Demonstrates calling the imported functions with various arguments to verify they work together.
