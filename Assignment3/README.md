@@ -1,33 +1,28 @@
-# Assignment 3
+# Python Functions and Functional Programming Assignment
 
-This directory contains Python tasks focusing on different programming concepts including functions, error handling, lambda functions, map, filter, and basic terminal interactions.
+This assignment contains Python scripts demonstrating the use of standard functions, recursion, lambda functions, and higher-order functions like `map()` and `filter()`.
 
-## Tasks Overview
+## Files Overview
 
-### [task1.py](./task1.py)
+### `task1.py` - Standard Functions and Default Arguments
+- **Functions:** Defines a function to calculate a discount, with a default discount parameter of 5%.
+- Contains logic to cap the maximum discount at 60%.
 
-A Python script that calculates the final payable amount after applying a given discount percentage to a price. The discount percentage is capped at a maximum of 60%.
+### `task2.py` - Recursion and Exception Handling
+- **Recursion:** Implements a recursive function to calculate the factorial of a given number.
+- Raises and handles a `ValueError` if the input is a negative integer.
 
-### [task2.py](./task2.py)
+### `task3.py` - Lambda Functions
+- **Lambda:** Defines simple lambda functions to calculate GST, discounts, and the final price by combining both operations.
 
-A program that computes the factorial of a given non-negative integer using recursion. It includes basic error handling to appropriately catch a `ValueError` for negative inputs.
+### `task4.py` - The `map()` Function
+- **Map:** Uses `map()` alongside a lambda function to apply an 18% GST to an entire list of prices, returning a new list.
 
-### [task3.py](./task3.py)
+### `task5.py` - The `filter()` Function
+- **Filter:** Uses `filter()` to split a list of prices into two separate lists: one containing prices strictly greater than 500, and another for prices strictly less than 500.
 
-Demonstrates the use of `lambda` functions to calculate GST (18%), apply a discount, and calculate the final price of an item.
+### `task6.py` - Combining `map()` and `filter()`
+- **Higher-Order Functions:** Defines a function that takes a list of prices, applies a 10% discount using `map()`, and extracts prices over 300 using `filter()`. Returns multiple values as a tuple.
 
-### [task4.py](./task4.py)
-
-Uses the `map()` function and a `lambda` expression to apply an 18% GST to a list of prices.
-
-### [task5.py](./task5.py)
-
-Uses the `filter()` function with `lambda` expressions to separate a list of prices into values greater than 500 and values less than 500.
-
-### [task6.py](./task6.py)
-
-A script that showcases both `map()` and `filter()` with lambdas to apply a 10% discount to a list of prices and filter prices greater than 300.
-
-### [task7.py](./task7.py)
-
-A command-line interactive program where users can continually add prices to a list, view the average of the entered prices, or find the maximum price.
+### `task7.py` - Modular Application
+- **Application:** Implements a menu-driven application to add prices to a list, calculate the average price, and find the maximum price using separate helper functions.
